@@ -7,7 +7,7 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import {Github, Linkedin, Mail} from "lucide-react"
 import Placeholder from '../../public/images/placeholder.svg'
 import AvatarImage from '../../public/images/avatar.jpg'
-import {projects} from "@/app/mock";
+import {projects} from "@/utils/mock";
 
 export default function HomePage() {
     const openLink = (s: string) => {
@@ -24,7 +24,7 @@ export default function HomePage() {
                     <div className="flex justify-between items-center h-16">
                         <div className="font-bold text-xl text-blue-600 cursor-pointer">Alex Portfolio</div>
                         <div className="flex space-x-8">
-                            <Link href="/" className="text-blue-600 font-medium">
+                            <Link href="/public" className="text-blue-600 font-medium">
                                 Home
                             </Link>
                             <Link href="/contact" className="text-gray-600 hover:text-blue-600 font-medium">

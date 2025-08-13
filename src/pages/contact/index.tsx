@@ -47,9 +47,9 @@ export default function ContactPage() {
             <nav className="bg-white shadow-sm border-b">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
-                        <Link className="font-bold text-xl text-blue-600" href={"/"}>Alex Portfolio</Link>
+                        <Link className="font-bold text-xl text-blue-600" href={"/public"}>Alex Portfolio</Link>
                         <div className="flex space-x-8">
-                            <Link href="/" className="text-gray-600 hover:text-blue-600 font-medium">
+                            <Link href="/public" className="text-gray-600 hover:text-blue-600 font-medium">
                                 Home
                             </Link>
                             <Link href="/contact" className="text-blue-600 font-medium">

@@ -1,7 +1,11 @@
 import type {NextConfig} from "next";
 
+/** @type {import('next').NextConfig} */
 const nextConfig: NextConfig = {
     output: "export",
+    trailingSlash: true,
+    basePath: '/my-portfolio',
+    assetPrefix: '/my-portfolio/',
     images: {
         unoptimized: true,
     },

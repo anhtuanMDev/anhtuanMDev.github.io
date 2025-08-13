@@ -1,4 +1,4 @@
-import {ProjectInfo, SkillsSet, TestimonialsInfo} from "@/app/types";
+import {ProjectInfo, SkillsSet, TestimonialsInfo} from "@/types/types";
 
 export const skills: SkillsSet[] = [
     {name: "React Native", level: 75},
