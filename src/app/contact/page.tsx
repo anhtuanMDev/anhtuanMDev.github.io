@@ -9,7 +9,7 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import {Input} from "@/components/ui/input"
 import {Label} from "@/components/ui/label"
 import {Textarea} from "@/components/ui/textarea"
-import {Github, Linkedin, Mail, MapPin, Phone, Send} from "lucide-react"
+import {Github, Linkedin, Mail, MapPin, Send} from "lucide-react"
 import {toast} from "sonner";
 
 export default function ContactPage() {
