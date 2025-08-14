@@ -5,8 +5,6 @@ import {Badge} from "@/components/ui/badge"
 import {Button} from "@/components/ui/button"
 import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/components/ui/card"
 import {Github, Linkedin, Mail} from "lucide-react"
-import Placeholder from '../../public/images/placeholder.svg'
-import AvatarImage from '../../public/images/avatar.jpg'
 import {projects} from "@/app/mock";
 
 export default function HomePage() {
@@ -35,13 +33,14 @@ export default function HomePage() {
                 </div>
             </nav>
 
-            {/* Hero Section */}
             <section className="py-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-6xl mx-auto text-center">
                     <div className="mb-8">
                         <Image
-                            src={AvatarImage}
-                            alt="placeholder"
+                            src="/images/avatar.jpg"
+                            alt="avatar"
+                            width={150}
+                            height={150}
                             className="rounded-full size-[150px] object-cover mx-auto mb-6 border-4 border-blue-100 overflow-hidden"
                         />
                         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
@@ -76,7 +75,7 @@ export default function HomePage() {
                             <Card onClick={() => openLink(project.link)} key={index}
                                   className="overflow-hidden hover:shadow-lg transition-shadow py-0 pb-6 cursor-pointer">
                                 <div className="aspect-video relative">
-                                    <Image src={project.image || Placeholder} alt={project.title} fill
+                                    <Image src={project.image || '/images/placeholder.svg'} alt={project.title} fill
                                            className="object-cover"/>
                                 </div>
                                 <CardHeader>

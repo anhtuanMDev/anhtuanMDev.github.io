@@ -9,7 +9,7 @@ import {Card, CardContent, CardDescription, CardHeader, CardTitle} from "@/compo
 import {Input} from "@/components/ui/input"
 import {Label} from "@/components/ui/label"
 import {Textarea} from "@/components/ui/textarea"
-import {Github, Linkedin, Mail, MapPin, Phone, Send} from "lucide-react"
+import {Github, Linkedin, Mail, MapPin, Send} from "lucide-react"
 import {toast} from "sonner";
 
 export default function ContactPage() {
@@ -23,12 +23,23 @@ export default function ContactPage() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault()
         // Handle form submission here
-        console.log("Form submitted:", formData)
-        // Reset form
-        // setFormData({name: "", email: "", subject: "", message: ""})
+        const date = new Date();
+
+        const formattedDate = date.toLocaleString("en-US", {
+            weekday: "long",
+            year: "numeric",
+            month: "long",
+            day: "2-digit",
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true
+        });
+        const finalString = formattedDate.replace(", ", " at ");
+
+        setFormData({name: "", email: "", subject: "", message: ""})
         toast("Event has been created", {
             description: (
-                <span className="text-gray-400">Sunday, December 03, 2023 at 9:00 AM</span>
+                <span className="text-gray-400">{finalString}</span>
             ),
             duration: 2000, // hiển thị 5 giây
         })
