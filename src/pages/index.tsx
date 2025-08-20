@@ -104,7 +104,7 @@ export default function HomePage() {
                     <div className="max-w-6xl mx-auto">
                         <div className="text-center mb-16">
                             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
-                            <p className="text-xl text-gray-600">Some of my recent work that I&#39;m proud of</p>
+                            <p className="text-xl text-gray-600">Some of my recent work that I&#39;m improving</p>
                         </div>
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {projects.map((project, index) => (
