@@ -1,17 +1,18 @@
-import type { NextConfig } from "next";
-
-/** @type {import('next').NextConfig} */
+import type {NextConfig} from "next";
 const nextConfig: NextConfig = {
     output: "export",
-    trailingSlash: true,
     images: {
         unoptimized: true,
     },
+    // No basePath needed for username.github.io repositories
+    // basePath: '',
+    // assetPrefix: '',
+
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/i,
             issuer: /\.[jt]sx?$/,
-            use: ["@svgr/webpack"],
+            use: ['@svgr/webpack'],
         });
         return config;
     },
