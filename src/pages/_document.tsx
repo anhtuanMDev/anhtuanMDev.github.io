@@ -18,7 +18,6 @@ export default function Document() {
                 <meta property="og:image" content="/logo.png" />
                 <meta property="og:image:width" content="800" />
                 <meta property="og:image:height" content="600" />
-                <title>Alex Vin Portfolio</title>
             </Head>
             <body>
             <Main />
