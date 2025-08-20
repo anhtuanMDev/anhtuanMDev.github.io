@@ -1,13 +1,13 @@
 import type {NextConfig} from "next";
-const isProd = process.env.NODE_ENV === 'production';
 const nextConfig: NextConfig = {
     output: "export",
     images: {
         unoptimized: true,
     },
-    basePath: isProd ? '/anhtuanmdev.github.io' : '',
-    assetPrefix: isProd ? '/anhtuanmdev.github.io/' : '',
-    /* config options here */
+    // No basePath needed for username.github.io repositories
+    // basePath: '',
+    // assetPrefix: '',
+
     webpack(config) {
         config.module.rules.push({
             test: /\.svg$/i,
